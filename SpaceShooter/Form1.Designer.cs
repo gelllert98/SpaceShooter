@@ -1,0 +1,200 @@
+﻿namespace SpaceShooter
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.MoveBgTimer = new System.Windows.Forms.Timer(this.components);
+            this.Player = new System.Windows.Forms.PictureBox();
+            this.LeftMoveTimer = new System.Windows.Forms.Timer(this.components);
+            this.RightMoveTimer = new System.Windows.Forms.Timer(this.components);
+            this.DownMoveTimer = new System.Windows.Forms.Timer(this.components);
+            this.UpMoveTimer = new System.Windows.Forms.Timer(this.components);
+            this.MoveMunitionTimer = new System.Windows.Forms.Timer(this.components);
+            this.MoveEnemiesTimer = new System.Windows.Forms.Timer(this.components);
+            this.EnemiesMunitionTimer = new System.Windows.Forms.Timer(this.components);
+            this.label = new System.Windows.Forms.Label();
+            this.ReplayBtn = new System.Windows.Forms.Button();
+            this.ExitBtn = new System.Windows.Forms.Button();
+            this.scorelbl = new System.Windows.Forms.Label();
+            this.levellbl = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // MoveBgTimer
+            // 
+            this.MoveBgTimer.Enabled = true;
+            this.MoveBgTimer.Interval = 10;
+            // 
+            // Player
+            // 
+            this.Player.BackColor = System.Drawing.Color.Transparent;
+            this.Player.Image = ((System.Drawing.Image)(resources.GetObject("Player.Image")));
+            this.Player.Location = new System.Drawing.Point(260, 380);
+            this.Player.Name = "Player";
+            this.Player.Size = new System.Drawing.Size(58, 50);
+            this.Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Player.TabIndex = 0;
+            this.Player.TabStop = false;
+            // 
+            // LeftMoveTimer
+            // 
+            this.LeftMoveTimer.Interval = 5;
+            this.LeftMoveTimer.Tick += new System.EventHandler(this.LeftMoveTimer_Tick);
+            // 
+            // RightMoveTimer
+            // 
+            this.RightMoveTimer.Interval = 5;
+            this.RightMoveTimer.Tick += new System.EventHandler(this.RightMoveTimer_Tick);
+            // 
+            // DownMoveTimer
+            // 
+            this.DownMoveTimer.Interval = 5;
+            this.DownMoveTimer.Tick += new System.EventHandler(this.DownMoveTimer_Tick);
+            // 
+            // UpMoveTimer
+            // 
+            this.UpMoveTimer.Interval = 5;
+            this.UpMoveTimer.Tick += new System.EventHandler(this.UpMoveTimer_Tick);
+            // 
+            // MoveMunitionTimer
+            // 
+            this.MoveMunitionTimer.Enabled = true;
+            this.MoveMunitionTimer.Interval = 20;
+            this.MoveMunitionTimer.Tick += new System.EventHandler(this.MoveMunitionTimer_Tick);
+            // 
+            // MoveEnemiesTimer
+            // 
+            this.MoveEnemiesTimer.Enabled = true;
+            this.MoveEnemiesTimer.Tick += new System.EventHandler(this.MoveEnemiesTimer_Tick);
+            // 
+            // EnemiesMunitionTimer
+            // 
+            this.EnemiesMunitionTimer.Enabled = true;
+            this.EnemiesMunitionTimer.Interval = 20;
+            this.EnemiesMunitionTimer.Tick += new System.EventHandler(this.EnemiesMunitionTimer_Tick);
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label.Location = new System.Drawing.Point(159, 48);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(204, 46);
+            this.label.TabIndex = 1;
+            this.label.Text = "Game Over";
+            this.label.Visible = false;
+            // 
+            // ReplayBtn
+            // 
+            this.ReplayBtn.Location = new System.Drawing.Point(127, 254);
+            this.ReplayBtn.Name = "ReplayBtn";
+            this.ReplayBtn.Size = new System.Drawing.Size(140, 39);
+            this.ReplayBtn.TabIndex = 2;
+            this.ReplayBtn.Text = "Replay";
+            this.ReplayBtn.UseVisualStyleBackColor = true;
+            this.ReplayBtn.Visible = false;
+            this.ReplayBtn.Click += new System.EventHandler(this.ReplayBtn_Click);
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Location = new System.Drawing.Point(127, 332);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(140, 42);
+            this.ExitBtn.TabIndex = 3;
+            this.ExitBtn.Text = "Exit";
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Visible = false;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            // 
+            // scorelbl
+            // 
+            this.scorelbl.AutoSize = true;
+            this.scorelbl.ForeColor = System.Drawing.Color.Yellow;
+            this.scorelbl.Location = new System.Drawing.Point(29, 13);
+            this.scorelbl.Name = "scorelbl";
+            this.scorelbl.Size = new System.Drawing.Size(51, 20);
+            this.scorelbl.TabIndex = 4;
+            this.scorelbl.Text = "Score";
+            // 
+            // levellbl
+            // 
+            this.levellbl.AutoSize = true;
+            this.levellbl.ForeColor = System.Drawing.Color.Yellow;
+            this.levellbl.Location = new System.Drawing.Point(494, 13);
+            this.levellbl.Name = "levellbl";
+            this.levellbl.Size = new System.Drawing.Size(40, 20);
+            this.levellbl.TabIndex = 5;
+            this.levellbl.Text = "level";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ClientSize = new System.Drawing.Size(578, 444);
+            this.Controls.Add(this.levellbl);
+            this.Controls.Add(this.scorelbl);
+            this.Controls.Add(this.ExitBtn);
+            this.Controls.Add(this.ReplayBtn);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.Player);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.Name = "Form1";
+            this.Text = "Space Shooter";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Timer MoveBgTimer;
+        private System.Windows.Forms.PictureBox Player;
+        private System.Windows.Forms.Timer LeftMoveTimer;
+        private System.Windows.Forms.Timer RightMoveTimer;
+        private System.Windows.Forms.Timer DownMoveTimer;
+        private System.Windows.Forms.Timer UpMoveTimer;
+        private System.Windows.Forms.Timer MoveMunitionTimer;
+        private System.Windows.Forms.Timer MoveEnemiesTimer;
+        private System.Windows.Forms.Timer EnemiesMunitionTimer;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Button ReplayBtn;
+        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.Label scorelbl;
+        private System.Windows.Forms.Label levellbl;
+    }
+}
+
